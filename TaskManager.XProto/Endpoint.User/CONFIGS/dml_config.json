@@ -1,0 +1,18 @@
+{
+  "XDmlComponentConfig": {
+    "Entities": [
+      {
+        "DmlKey": "InsertUser",
+        "DmlType": "INSERT",
+        "EntityName": "UserTM",
+        "DmlCode": "EXEC InsertAction @EntityName, @Rows"
+      },
+      {
+        "DmlKey": "SelectUserList",
+        "DmlType": "SELECT",
+        "EntityName": "UserTM",
+        "DmlCode": "select * from UserTM"
+      }
+    ]
+  }
+}

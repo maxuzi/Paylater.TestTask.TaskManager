@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Paylater.TestTask.TaskManager.User.Core</AssemblyName>
+    <RootNamespace>Paylater.TestTask.TaskManager.User.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Api\X.Proto.Db.Api.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Component.Dml\X.Proto.Db.Component.Dml.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Core.Rdbms\X.Proto.Db.Core.Rdbms.csproj" />
+    <ProjectReference Include="..\User.Api\User.Api.csproj" />
+  </ItemGroup>
+
+</Project>

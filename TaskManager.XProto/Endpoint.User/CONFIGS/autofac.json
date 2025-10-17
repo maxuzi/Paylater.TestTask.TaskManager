@@ -1,0 +1,21 @@
+{
+  "modules": [
+    {
+      "type": "X.Proto.Common.AppAccessors.RAppAccessor, X.Proto.Common.AppAccessors"
+    },
+    {
+      "type": "X.Proto.Db.Core.Rdbms.RXDbRdbms, X.Proto.Db.Core.Rdbms"
+    },
+    {
+      "type": "X.Proto.Db.Component.Dml.RXDmlComponent, X.Proto.Db.Component.Dml"
+    },
+
+
+
+
+    {
+      "type": "Paylater.TestTask.TaskManager.User.Core.RUser, Paylater.TestTask.TaskManager.User.Core"
+    }
+  ]
+
+}
