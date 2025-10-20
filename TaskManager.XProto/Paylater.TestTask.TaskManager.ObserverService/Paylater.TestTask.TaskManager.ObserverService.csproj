@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="CONFIGS\rabbit_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="CONFIGS\rabbit_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Component.ServiceBrokers.RabbitMQ\X.Proto.Component.ServiceBrokers.RabbitMQ.csproj" />
+  </ItemGroup>
+
+</Project>

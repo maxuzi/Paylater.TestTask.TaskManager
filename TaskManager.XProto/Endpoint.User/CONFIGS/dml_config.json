@@ -5,7 +5,8 @@
         "DmlKey": "InsertUser",
         "DmlType": "INSERT",
         "EntityName": "UserTM",
-        "DmlCode": "EXEC InsertAction @EntityName, @Rows"
+        "DmlCode": "EXEC InsertAction @EntityName, @Rows",
+        "SequenceField": "DateId"
       },
       {
         "DmlKey": "SelectUserList",

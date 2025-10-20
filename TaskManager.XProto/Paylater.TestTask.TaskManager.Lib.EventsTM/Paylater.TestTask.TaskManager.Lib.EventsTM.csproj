@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Logging.NLog\X.Proto.Common.Logging.NLog.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Component.ServiceBrokers.RabbitMQ\X.Proto.Component.ServiceBrokers.RabbitMQ.csproj" />
+  </ItemGroup>
+
+</Project>

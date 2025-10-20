@@ -1,0 +1,13 @@
+{
+  "XRabbitMQConfig": {
+    "Queues": [
+      {
+        "QueueName": "AppEvents",
+        "HostName": "localhost",
+        "UserName": "guest",
+        "Password": "guest",
+        "Exchange": "AppEventsExchange"
+      }
+    ]
+  }
+}

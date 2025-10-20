@@ -1,0 +1,2 @@
+10/20/2025 9:42:02 AM --- Paylater.TestTask.TaskManager.User.Core.User_GetUserListAsync [] 
+10/20/2025 9:46:59 AM --- Paylater.TestTask.TaskManager.User.Core.User_CreateAsync [{"Fields":["DateId","Name"],"Rows":[["10/20/2025 4:46:43 AM","PPP BBB VVV"]]}] 

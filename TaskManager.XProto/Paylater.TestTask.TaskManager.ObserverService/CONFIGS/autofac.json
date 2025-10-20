@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "type": "X.Proto.Component.ServiceBrokers.RabbitMQ.RXRabbitMQ, X.Proto.Component.ServiceBrokers.RabbitMQ"
+    }
+  ]
+
+}

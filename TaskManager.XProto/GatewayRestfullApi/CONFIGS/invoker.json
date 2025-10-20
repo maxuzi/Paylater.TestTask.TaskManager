@@ -1,0 +1,16 @@
+{
+  "XInvokerConfig": {
+    "AppServices": [
+      {
+        "AppServiceMethod": "IUser",
+        "TransportName": "Grpc",
+        "Params": [
+          {
+            "NameParam": "UrlGrpc",
+            "ValueParam": "https://localhost:6000"
+          }
+        ]
+      }
+    ]
+  }
+}
