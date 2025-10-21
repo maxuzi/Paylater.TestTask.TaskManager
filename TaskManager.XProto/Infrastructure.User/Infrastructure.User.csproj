@@ -12,6 +12,7 @@
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker.WebApi\X.Proto.Common.Endpoints.Invoker.WebApi.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker\X.Proto.Common.Endpoints.Invoker.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />
   </ItemGroup>
 
 </Project>

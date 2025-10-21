@@ -3,9 +3,11 @@
     {
       "type": "X.Proto.Common.Endpoints.Invoker.RXInvoker, X.Proto.Common.Endpoints.Invoker"
     },
-
+    {
+      "type": "X.Proto.Common.Endpoints.Invoker.WebApi.RXInvokerWebApi, X.Proto.Common.Endpoints.Invoker.WebApi"
+    },
     {
       "type": "X.Proto.Common.Endpoints.Invoker.Grpc.RXInvokerGrpc, X.Proto.Common.Endpoints.Invoker.Grpc"
-    },
+    }
   ]
 }

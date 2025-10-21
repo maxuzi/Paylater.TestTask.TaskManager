@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Extras.DynamicProxy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Serv
     {
         protected override void Load( ContainerBuilder builder )
         {
-            builder.RegisterType<UserService>().As<IUserService>().SingleInstance();
+            builder.RegisterType<UserService>().As<IUserService>().EnableClassInterceptors().InterceptedBy( "EVENT" ).SingleInstance();
         }
     }
 }

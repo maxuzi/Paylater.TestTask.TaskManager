@@ -23,33 +23,35 @@ namespace Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core
             _statusRules  = pStatusRules;
         }
 
-        public virtual async Task<XData> CreateAsync( XData pData )
+        public virtual async Task<XData> CreateAsync( XData pUserTask )
         {
             this.checkStatusRule( String.Empty );
-            pData.SetValue( this.createHistoryJson(), "History" );
+            this.createHistoryField( ref pUserTask );
 
-            return await _dmlComponent.Execute( "InsertUserTasks", pData );
+            return await _dmlComponent.Execute( "InsertUserTasks", pUserTask );
         }
 
-        public virtual async Task<XData> UpdateStatusAsync( XData pData )
+        public virtual async Task<XData> UpdateStatusAsync( XData pUpdateStatusData )
         {
-            pData.SetValue( DateTime.Now.ToString( "yyyy-MM-dd HH:mm:ss.fff" ), "HistId" );
+            pUpdateStatusData.SetValue( DateTime.Now.ToString( "yyyy-MM-dd HH:mm:ss.fff" ), "HistId" );
 
-            return await _dmlComponent.Execute( "UpdateUserTasksStatus", pData );
+            return await _dmlComponent.Execute( "UpdateUserTasksStatus", pUpdateStatusData );
         }
 
 
 
 
 
-        protected virtual string createHistoryJson() 
+        protected virtual void createHistoryField( ref XData rUserTask ) 
         {
+            rUserTask.Fields.Add( "History" );
+
             var history = new { DateId = DateTime.Now.ToString( "yyyy-MM-dd HH:mm:ss.fff" ),
                 Status = "NEW" };
 
             string res = JsonSerializer.Serialize( history );
 
-            return $"[{res}]";
+            rUserTask.Rows[0].Add( $"[{res}] ");
         }
 
         protected virtual void checkStatusRule( string pHistory ) 

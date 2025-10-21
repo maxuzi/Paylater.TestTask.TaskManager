@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using X.Proto.Common.Endpoints.Invoker;
 using X.Proto.Common.Entities;
 
-namespace LoanArtefactLens.WebApi.Controllers
+namespace Paylater.TestTask.TaskManager.GatewayRestfullApi.User
 {
     [ApiController]
     [Route("task-manager/v1/")]

@@ -10,6 +10,16 @@
             "ValueParam": "https://localhost:6000"
           }
         ]
+      },
+      {
+        "AppServiceMethod": "IUserTasksCommand",
+        "TransportName": "WebApi",
+        "Params": [
+          {
+            "NameParam": "UrlWeb",
+            "ValueParam": "https://localhost:6002/command/execute"
+          }
+        ]
       }
     ]
   }

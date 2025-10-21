@@ -14,7 +14,7 @@ end
 
 go
 
-CREATE OR ALTER PROCEDURE UpdateUserTaskStatus( @UserId DATETIME, @TaskId DATETIME, @HistId DATETIME, @Status VARCHAR(10) )
+CREATE OR ALTER PROCEDURE UpdateUserTaskStatus( @UserId DATETIME, @TaskId DATETIME, @HistId DATETIME, @Status VARCHAR(20) )
 AS
 
 declare @newHistory VARCHAR(256) = '{"DateId":"' + FORMAT(@HistId, 'yyyy-MM-dd HH:mm:ss.fff') + '","Status":"'+@Status+'"}';
