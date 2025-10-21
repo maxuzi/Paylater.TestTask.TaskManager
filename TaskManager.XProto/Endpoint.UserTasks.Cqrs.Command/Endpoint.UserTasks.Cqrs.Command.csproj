@@ -7,42 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="CONFIGS\rabbit_config.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="CONFIGS\rabbit_config.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />
-    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.NLog\X.Proto.Common.Endpoints.Setup.NLog.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.Grpc\X.Proto.Common.Endpoints.Transport.Grpc.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.WebApi\X.Proto.Common.Endpoints.Transport.WebApi.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
-    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />
-    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Logging.NLog\X.Proto.Common.Logging.NLog.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Api\X.Proto.Db.Api.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Component.Dml\X.Proto.Db.Component.Dml.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Core.Rdbms\X.Proto.Db.Core.Rdbms.csproj" />
-    <ProjectReference Include="..\Paylater.TestTask.TaskManager.Lib.EventsTM\Paylater.TestTask.TaskManager.Lib.EventsTM.csproj" />
-    <ProjectReference Include="..\User.Api\User.Api.csproj" />
-    <ProjectReference Include="..\User.Core\User.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="CONFIGS\autofac.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="CONFIGS\dml_config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
+    <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Api\UserTasks.Cqrs.Command.UserTasks.Api.csproj" />
+    <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules.csproj" />
+    <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Core\UserTasks.Cqrs.Command.UserTasks.Core.csproj" />
   </ItemGroup>
 
 </Project>

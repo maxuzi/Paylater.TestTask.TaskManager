@@ -6,9 +6,9 @@
     {
       "type": "X.Proto.Common.Events.RXEvents, X.Proto.Common.Events"
     },
-    //{
-    //  "type": "X.Proto.Common.Logging.NLog.RXLoggingNLog, X.Proto.Common.Logging.NLog"
-    //},
+    {
+      "type": "X.Proto.Common.Logging.NLog.RXLoggingNLog, X.Proto.Common.Logging.NLog"
+    },
     {
       "type": "X.Proto.Db.Core.Rdbms.RXDbRdbms, X.Proto.Db.Core.Rdbms"
     },
@@ -21,9 +21,9 @@
 
 
 
-    {
-      "type": "Paylater.TestTask.TaskManager.Lib.EventsTM.REventTM, Paylater.TestTask.TaskManager.Lib.EventsTM"
-    },
+    //{
+    //  "type": "Paylater.TestTask.TaskManager.Lib.EventsTM.REventTM, Paylater.TestTask.TaskManager.Lib.EventsTM"
+    //},
     {
       "type": "Paylater.TestTask.TaskManager.User.Core.RUser, Paylater.TestTask.TaskManager.User.Core"
     }

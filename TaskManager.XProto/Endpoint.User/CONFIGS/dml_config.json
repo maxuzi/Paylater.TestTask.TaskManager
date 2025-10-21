@@ -11,8 +11,12 @@
       {
         "DmlKey": "SelectUserList",
         "DmlType": "SELECT",
-        "EntityName": "UserTM",
         "DmlCode": "select * from UserTM"
+      },
+      {
+        "DmlKey": "SelectUserName",
+        "DmlType": "SELECT",
+        "DmlCode": "select name from UserTM where dateId = @UserId"
       }
     ]
   }

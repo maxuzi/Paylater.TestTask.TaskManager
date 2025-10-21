@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core</AssemblyName>
+    <RootNamespace>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Component.Dml\X.Proto.Db.Component.Dml.csproj" />
+    <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Api\UserTasks.Cqrs.Command.UserTasks.Api.csproj" />
+    <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules.csproj" />
+  </ItemGroup>
+
+</Project>

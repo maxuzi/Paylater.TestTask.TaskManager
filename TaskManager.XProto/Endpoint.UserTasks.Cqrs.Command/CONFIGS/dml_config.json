@@ -1,0 +1,18 @@
+{
+  "XDmlComponentConfig": {
+    "Entities": [
+      {
+        "DmlKey": "InsertUserTasks",
+        "DmlType": "INSERT",
+        "EntityName": "UserTasks",
+        "DmlCode": "EXEC InsertAction @EntityName, @Rows",
+        "SequenceField": "DateId"
+      },
+      {
+        "DmlKey": "UpdateUserTasksStatus",
+        "DmlType": "SCRIPT",
+        "DmlCode": "EXEC UpdateUserTaskStatus @UserId, @TaskId, @HistId, @Status"
+      }
+    ]
+  }
+}

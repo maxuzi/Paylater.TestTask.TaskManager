@@ -1,0 +1,40 @@
+{
+  "modules": [
+    {
+      "type": "X.Proto.Common.AppAccessors.RAppAccessor, X.Proto.Common.AppAccessors"
+    },
+    {
+      "type": "X.Proto.Common.Events.RXEvents, X.Proto.Common.Events"
+    },
+    {
+      "type": "X.Proto.Common.Logging.NLog.RXLoggingNLog, X.Proto.Common.Logging.NLog"
+    },
+    {
+      "type": "X.Proto.Db.Core.Rdbms.RXDbRdbms, X.Proto.Db.Core.Rdbms"
+    },
+    {
+      "type": "X.Proto.Db.Component.Dml.RXDmlComponent, X.Proto.Db.Component.Dml"
+    },
+
+
+    {
+      "type": "X.Proto.Common.Endpoints.Invoker.RXInvoker, X.Proto.Common.Endpoints.Invoker"
+    },
+    {
+      "type": "X.Proto.Common.Endpoints.Invoker.WebApi.RXInvokerWebApi, X.Proto.Common.Endpoints.Invoker.WebApi"
+    },
+
+
+
+    {
+      "type": "Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core.RUserTasksQuery, Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core"
+    },
+    {
+      "type": "Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Repository.UserTasks.RUserTasksRepository, Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Repository.UserTasks"
+    },
+    {
+      "type": "Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Service.User.RUserService, Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Service.User"
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core</AssemblyName>
+    <RootNamespace>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+    <ProjectReference Include="..\Infrastructure.UserTasks\Infrastructure.UserTasks.csproj" />
+    <ProjectReference Include="..\Infrastructure.User\Infrastructure.User.csproj" />
+    <ProjectReference Include="..\UserTasks.Cqrs.Query.UserTasks.Api\UserTasks.Cqrs.Query.UserTasks.Api.csproj" />
+  </ItemGroup>
+
+</Project>

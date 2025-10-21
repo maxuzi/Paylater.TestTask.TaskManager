@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Service.User</AssemblyName>
+    <RootNamespace>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Service.User</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker.WebApi\X.Proto.Common.Endpoints.Invoker.WebApi.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker\X.Proto.Common.Endpoints.Invoker.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

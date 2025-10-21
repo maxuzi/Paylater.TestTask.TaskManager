@@ -1,0 +1,11 @@
+{
+  "XDmlComponentConfig": {
+    "Entities": [
+      {
+        "DmlKey": "GetUserTasks",
+        "DmlType": "SELECT",
+        "DmlCode": "select * from UserTasksV where userId = @UserId"
+      }
+    ]
+  }
+}

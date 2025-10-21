@@ -12,5 +12,7 @@ namespace Paylater.TestTask.TaskManager.User.Api
         Task<XData> CreateAsync( XData pUser );
 
         Task<XData> GetUserListAsync();
+
+        Task<XData> GetUserNameAsync( XData pUserId );
     }
 }

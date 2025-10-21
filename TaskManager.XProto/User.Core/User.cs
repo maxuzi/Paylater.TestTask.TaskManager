@@ -30,5 +30,10 @@ namespace Paylater.TestTask.TaskManager.User.Core
         {
             return await _dmlComponent.Execute( "SelectUserList" );
         }
+
+        public virtual async Task<XData> GetUserNameAsync( XData pUser )
+        {
+            return await _dmlComponent.Execute( "SelectUserName", pUser );
+        }
     }
 }

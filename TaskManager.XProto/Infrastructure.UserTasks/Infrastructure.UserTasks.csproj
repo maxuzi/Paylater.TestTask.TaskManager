@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Repository.UserTasks</AssemblyName>
+    <RootNamespace>Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Repository.UserTasks</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Api\X.Proto.Db.Api.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Component.Dml\X.Proto.Db.Component.Dml.csproj" />
+  </ItemGroup>
+
+</Project>
