@@ -24,8 +24,7 @@ namespace Paylater.TestTask.TaskManager.GatewayRestfullApi.UserTasks
         [Route( "user-tasks/task" )]
         public async Task<IActionResult> CreateUserTask( [FromBody] UserTasksDto task )
         {
-            var taskXData = UserTasksMapping.UserTaskDtoToXData( task );
-
+            var taskXData      = UserTasksMapping.UserTaskDtoToXData( task );
             var invokerRequest = taskXData.CreateRequest( "IUserTasksCommand.CreateAsync" );
 
             await _invoker.ExecuteCommandAsync( invokerRequest );
@@ -35,16 +34,30 @@ namespace Paylater.TestTask.TaskManager.GatewayRestfullApi.UserTasks
 
         [HttpPut]
         [ProducesResponseType( StatusCodes.Status200OK )]
-        [Route( "user-tasks/{task_id}/users/{user_id}/status-code/{status_code}" )]
+        [Route( "users/{user_id}/user-tasks/{task_id}/status-code/{status_code}" )]
         public async Task<IActionResult> UpdateStatus( DateTime task_id, DateTime user_id, string status_code )
         {
-            var taskXData = UserTasksMapping.UpdateStatusDtoToXData( user_id, task_id, status_code );
-
+            var taskXData      = UserTasksMapping.UpdateStatusDtoToXData( user_id, task_id, status_code );
             var invokerRequest = taskXData.CreateRequest( "IUserTasksCommand.UpdateStatusAsync" );
 
             await _invoker.ExecuteCommandAsync( invokerRequest );
 
             return Ok();
+        }
+
+        [HttpGet]
+        [ProducesResponseType( typeof( UserTasksViewDto ), StatusCodes.Status200OK )]
+        [ProducesResponseType( StatusCodes.Status404NotFound )]
+        [Route( "users/{user_id}/user-tasks/" )]
+        public async Task<IActionResult> GetUsers( DateTime user_id )
+        {
+
+            var userIdXData    = UserTasksMapping.UserIdDtoToXData( user_id );
+            var invokerRequest = userIdXData.CreateRequest( "IUserTasksQuery.GetUserTasksAsync" );
+            var resultJson     = await _invoker.ExecuteCommandAsync( invokerRequest );
+            var result         = UserTasksMapping.JsonToUserTaskDto( resultJson );
+
+            return Ok( result );
         }
     }
 }

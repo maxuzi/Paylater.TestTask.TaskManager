@@ -52,8 +52,8 @@ namespace Paylater.TestTask.TaskManager.ObserverService
         }
 
         private static readonly SemaphoreSlim semaphoreSlim = new SemaphoreSlim( 1, 1 );
-        private static List<string> ObservableEvents = new List<string>() { "Paylater.TestTask.TaskManager.User.Core.User_GetUserListAsync" 
-                                                                           ,"Paylater.TestTask.TaskManager.User.Core.User_CreateAsync"
+        private static List<string> ObservableEvents = new List<string>() { "Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core.UserTasksCommand_CreateAsync"
+                                                                           ,"Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core.UserTasksCommand_UpdateStatusAsync"
                                                                           };
     }
 }

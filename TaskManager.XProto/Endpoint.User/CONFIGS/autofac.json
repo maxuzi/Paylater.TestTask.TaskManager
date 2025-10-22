@@ -15,9 +15,9 @@
     {
       "type": "X.Proto.Db.Component.Dml.RXDmlComponent, X.Proto.Db.Component.Dml"
     },
-    {
-      "type": "X.Proto.Component.ServiceBrokers.RabbitMQ.RXRabbitMQ, X.Proto.Component.ServiceBrokers.RabbitMQ"
-    },
+    //{
+    //  "type": "X.Proto.Component.ServiceBrokers.RabbitMQ.RXRabbitMQ, X.Proto.Component.ServiceBrokers.RabbitMQ"
+    //},
 
 
 

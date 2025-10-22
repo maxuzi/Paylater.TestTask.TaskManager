@@ -15,13 +15,17 @@
     {
       "type": "X.Proto.Db.Component.Dml.RXDmlComponent, X.Proto.Db.Component.Dml"
     },
-
-
-
-
+    {
+      "type": "X.Proto.Component.ServiceBrokers.RabbitMQ.RXRabbitMQ, X.Proto.Component.ServiceBrokers.RabbitMQ"
+    },
+    
+    
+    
+    {
+      "type": "Paylater.TestTask.TaskManager.Lib.EventsTM.REventTM, Paylater.TestTask.TaskManager.Lib.EventsTM"
+    },
     {
       "type": "Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core.RUserTasksCommand, Paylater.TestTask.TaskManager.UserTasks.Cqrs.Command.UserTasks.Core"
     }
   ]
-
 }

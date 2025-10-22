@@ -1,0 +1,12 @@
+DROP SERVICE   Q_SERVICE_SRC_ServiceA_ServiceB_GetB
+DROP SERVICE   Q_SERVICE_DST_ServiceA_ServiceB_GetB
+DROP QUEUE     Q_SRC_ServiceA_ServiceB_GetB
+DROP QUEUE     Q_DST_ServiceA_ServiceB_GetB
+DROP CONTRACT  Q_CONTRACT_ServiceA_ServiceB
+
+
+
+
+
+
+DROP MESSAGE TYPE Q_MESSAGE_TYPE

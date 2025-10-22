@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="CONFIGS\rabbit_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="CONFIGS\rabbit_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />
@@ -19,6 +27,7 @@
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Api\X.Proto.Db.Api.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Component.Dml\X.Proto.Db.Component.Dml.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Core.Rdbms\X.Proto.Db.Core.Rdbms.csproj" />
+    <ProjectReference Include="..\Paylater.TestTask.TaskManager.Lib.EventsTM\Paylater.TestTask.TaskManager.Lib.EventsTM.csproj" />
     <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Api\UserTasks.Cqrs.Command.UserTasks.Api.csproj" />
     <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules\UserTasks.Cqrs.Command.UserTasks.Core.StatusRules.csproj" />
     <ProjectReference Include="..\UserTasks.Cqrs.Command.UserTasks.Core\UserTasks.Cqrs.Command.UserTasks.Core.csproj" />

@@ -23,7 +23,7 @@ namespace Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core
             _userService         = pUser;
         }
 
-        public virtual async Task<XData> GetUserTasks( XData pUserId )
+        public virtual async Task<XData> GetUserTasksAsync( XData pUserId )
         {
             var taskList = await _userTasksRepository.GetUserTasksAsync(pUserId );
             var userName = await _userService.GetName( pUserId );

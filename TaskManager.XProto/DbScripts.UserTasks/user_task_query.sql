@@ -13,3 +13,6 @@ SELECT
  WHERE  JSON_VALUE(h.value, '$.DateId') = ( SELECT MAX(JSON_VALUE(h2.value, '$.DateId'))
                                               FROM OPENJSON(t.History) h2
                                           );
+
+
+

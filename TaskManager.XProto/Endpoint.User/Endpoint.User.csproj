@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="CONFIGS\rabbit_config.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="CONFIGS\rabbit_config.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />

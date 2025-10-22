@@ -9,6 +9,6 @@ namespace Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Api
 {
     public interface IUserTasksQuery
     {
-        Task<XData> GetUserTasks( XData pUserId );
+        Task<XData> GetUserTasksAsync( XData pUserId );
     }
 }

@@ -20,6 +20,16 @@
             "ValueParam": "https://localhost:6002/command/execute"
           }
         ]
+      },
+      {
+        "AppServiceMethod": "IUserTasksQuery",
+        "TransportName": "Grpc",
+        "Params": [
+          {
+            "NameParam": "UrlGrpc",
+            "ValueParam": "https://localhost:6004"
+          }
+        ]
       }
     ]
   }
