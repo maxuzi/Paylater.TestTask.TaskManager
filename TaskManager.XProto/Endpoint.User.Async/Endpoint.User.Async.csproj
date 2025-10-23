@@ -6,4 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker.MsSqlBroker\X.Proto.Common.Endpoints.Invoker.MsSqlBroker.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker\X.Proto.Common.Endpoints.Invoker.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.MsSqlBroker\X.Proto.Common.Endpoints.Transport.MsSqlBroker.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Api\X.Proto.Db.Api.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Db.Core.Rdbms\X.Proto.Db.Core.Rdbms.csproj" />
+    <ProjectReference Include="..\User.Api\User.Api.csproj" />
+    <ProjectReference Include="..\User.Core\User.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,5 @@
+{
+  "Root": {
+    "ConnectionString": "Server=Workstation\\MSSQL_MAX;Database=XPRT_USER;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}

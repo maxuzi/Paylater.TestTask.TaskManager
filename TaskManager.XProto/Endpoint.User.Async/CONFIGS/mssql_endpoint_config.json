@@ -1,0 +1,12 @@
+{
+  "XMsSqlBrokerConfig": {
+    "ConnectionString": "Server=Workstation\\MSSQL_MAX;Database=QUEUES;Trusted_Connection=True;TrustServerCertificate=True;",
+    "Queues": [
+      {
+        "ConsumeRequestSqlCode": "EXEC Consume_UserTasksQuery_UserService_GetUserName @MessageOUT OUT",
+        "AppServiceMethod": "IUser.GetUserNameAsync",
+        "PublishResponseSqlCode": "EXEC Publish_UserService_UserTasksQuery_GetName @Message"
+      }
+    ]
+  }
+}

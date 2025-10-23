@@ -1,22 +1,22 @@
 --ALTER DATABASE TEST SET ENABLE_BROKER WITH ROLLBACK AFTER 5 SECONDS
---waitfor(RECEIVE cast(message_body as nvarchar(MAX)) FROM Q_dst_ServiceA_ServiceB_GetB)
+--waitfor(RECEIVE cast(message_body as nvarchar(MAX)) FROM Q_dst_UserTasksQuery_UserService_GetUserName)
 
-CREATE MESSAGE TYPE Q_MESSAGE_TYPE VALIDATION = NONE 
+CREATE MESSAGE TYPE Q_MESSAGE_PaylaterTYPE VALIDATION = NONE 
 
 
-CREATE CONTRACT  Q_CONTRACT_ServiceA_ServiceB ( Q_MESSAGE_TYPE SENT BY ANY )
-CREATE QUEUE     Q_SRC_ServiceA_ServiceB_GetB
-CREATE SERVICE   Q_SERVICE_SRC_ServiceA_ServiceB_GetB ON QUEUE Q_SRC_ServiceA_ServiceB_GetB ( Q_CONTRACT_ServiceA_ServiceB )
-CREATE QUEUE     Q_DST_ServiceA_ServiceB_GetB
-CREATE SERVICE   Q_SERVICE_DST_ServiceA_ServiceB_GetB ON QUEUE Q_DST_ServiceA_ServiceB_GetB ( Q_CONTRACT_ServiceA_ServiceB )
+CREATE CONTRACT  Q_CONTRACT_UserTasksQuery_UserService ( Q_MESSAGE_PaylaterTYPE SENT BY ANY )
+CREATE QUEUE     Q_SRC_UserTasksQuery_UserService_GetUserName
+CREATE SERVICE   Q_SERVICE_SRC_UserTasksQuery_UserService_GetUserName ON QUEUE Q_SRC_UserTasksQuery_UserService_GetUserName ( Q_CONTRACT_UserTasksQuery_UserService )
+CREATE QUEUE     Q_DST_UserTasksQuery_UserService_GetUserName
+CREATE SERVICE   Q_SERVICE_DST_UserTasksQuery_UserService_GetUserName ON QUEUE Q_DST_UserTasksQuery_UserService_GetUserName ( Q_CONTRACT_UserTasksQuery_UserService )
 go
 
 
-CREATE CONTRACT  Q_CONTRACT_ServiceB_ServiceA ( Q_MESSAGE_TYPE SENT BY ANY )
-CREATE QUEUE     Q_SRC_ServiceB_ServiceA_GetA
-CREATE SERVICE   Q_SERVICE_SRC_ServiceB_ServiceA_GetA ON QUEUE Q_SRC_ServiceB_ServiceA_GetA ( Q_CONTRACT_ServiceB_ServiceA )
-CREATE QUEUE     Q_DST_ServiceB_ServiceA_GetA
-CREATE SERVICE   Q_SERVICE_DST_ServiceB_ServiceA_GetA ON QUEUE Q_DST_ServiceB_ServiceA_GetA ( Q_CONTRACT_ServiceB_ServiceA )
+CREATE CONTRACT  Q_CONTRACT_UserService_UserTasksQuery ( Q_MESSAGE_PaylaterTYPE SENT BY ANY )
+CREATE QUEUE     Q_SRC_UserService_UserTasksQuery_GetName
+CREATE SERVICE   Q_SERVICE_SRC_UserService_UserTasksQuery_GetName ON QUEUE Q_SRC_UserService_UserTasksQuery_GetName ( Q_CONTRACT_UserService_UserTasksQuery )
+CREATE QUEUE     Q_DST_UserService_UserTasksQuery_GetName
+CREATE SERVICE   Q_SERVICE_DST_UserService_UserTasksQuery_GetName ON QUEUE Q_DST_UserService_UserTasksQuery_GetName ( Q_CONTRACT_UserService_UserTasksQuery )
 go
 
 

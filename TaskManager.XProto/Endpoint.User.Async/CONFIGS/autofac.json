@@ -1,0 +1,31 @@
+{
+  "modules": [
+    {
+      "type": "X.Proto.Common.AppAccessors.RAppAccessor, X.Proto.Common.AppAccessors"
+    },
+    {
+      "type": "X.Proto.Common.Events.RXEvents, X.Proto.Common.Events"
+    },
+    {
+      "type": "X.Proto.Db.Core.Rdbms.RXDbRdbms, X.Proto.Db.Core.Rdbms"
+    },
+    {
+      "type": "X.Proto.Db.Component.Dml.RXDmlComponent, X.Proto.Db.Component.Dml"
+    },
+    {
+      "type": "X.Proto.Common.Endpoints.Invoker.RXInvoker, X.Proto.Common.Endpoints.Invoker"
+    },
+    {
+      "type": "X.Proto.Common.Endpoints.Invoker.MsSqlBroker.RXInvokerMsSqlBroker, X.Proto.Common.Endpoints.Invoker.MsSqlBroker"
+    },
+    {
+      "type": "X.Proto.Common.Endpoints.Transport.MsSqlBroker.RXMsSqlBroker, X.Proto.Common.Endpoints.Transport.MsSqlBroker"
+    },
+
+
+    {
+      "type": "Paylater.TestTask.TaskManager.User.Core.RUser, Paylater.TestTask.TaskManager.User.Core"
+    }
+  ]
+
+}

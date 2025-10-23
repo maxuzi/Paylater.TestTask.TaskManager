@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Paylater.TestTask.TaskManager.GatewayRestfullApi.Dtos;
 using Paylater.TestTask.TaskManager.GatewayRestfullApi.Mapping;
@@ -9,7 +10,7 @@ namespace Paylater.TestTask.TaskManager.GatewayRestfullApi.User
 {
     [ApiController]
     [Route("task-manager/v1/")]
-    //[Authorize(AuthenticationSchemes = "ApiToken")]
+    [Authorize(AuthenticationSchemes = "CustomAuth" )]
     public class UserController : ControllerBase
     {
         private readonly IXInvoker _invoker;

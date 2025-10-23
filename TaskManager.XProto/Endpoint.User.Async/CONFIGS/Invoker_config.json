@@ -2,7 +2,6 @@
   "XInvokerConfig": {
     "AppServices": [
       {
-        "AppServiceMethod": "IUser",
         "TransportName": "MsSqlBroker",
         "Params": [
           {
@@ -10,12 +9,8 @@
             "ValueParam": "Server=Workstation\\MSSQL_MAX;Database=QUEUES;Trusted_Connection=True;TrustServerCertificate=True;"
           },
           {
-            "NameParam": "PublishRequestSqlCode",
-            "ValueParam": "EXEC Publish_UserTasksQuery_UserService_GetUserName @Message"
-          },
-          {
-            "NameParam": "ConsumeResponseSqlCode",
-            "ValueParam": "EXEC Consume_UserService_UserTasksQuery_GetName @MessageOUT OUT"
+            "NameParam": "PublishSqlCode",
+            "ValueParam": "EXEC Publish_UserService_UserTasksQuery_GetName @Message"
           }
         ]
       }

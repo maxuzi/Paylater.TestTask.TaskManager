@@ -7,13 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="CONFIGS\invoker.j" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CONFIGS\invoker.j" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.AppAccessors\X.Proto.Common.AppAccessors.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker.MsSqlBroker\X.Proto.Common.Endpoints.Invoker.MsSqlBroker.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker.WebApi\X.Proto.Common.Endpoints.Invoker.WebApi.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Invoker\X.Proto.Common.Endpoints.Invoker.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.Autofac\X.Proto.Common.Endpoints.Setup.Autofac.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.ConfigFiles\X.Proto.Common.Endpoints.Setup.ConfigFiles.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Setup.NLog\X.Proto.Common.Endpoints.Setup.NLog.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.Grpc\X.Proto.Common.Endpoints.Transport.Grpc.csproj" />
+    <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.MsSqlBroker\X.Proto.Common.Endpoints.Transport.MsSqlBroker.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Endpoints.Transport.WebApi\X.Proto.Common.Endpoints.Transport.WebApi.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Entities\X.Proto.Common.Entities.csproj" />
     <ProjectReference Include="..\..\..\X.Proto.Framework\X.Proto.Common.Events\X.Proto.Common.Events.csproj" />

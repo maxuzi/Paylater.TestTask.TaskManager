@@ -1,0 +1,23 @@
+{
+  "XDmlComponentConfig": {
+    "Entities": [
+      {
+        "DmlKey": "InsertUser",
+        "DmlType": "INSERT",
+        "EntityName": "UserTM",
+        "DmlCode": "EXEC InsertAction @EntityName, @Rows",
+        "SequenceField": "DateId"
+      },
+      {
+        "DmlKey": "SelectUserList",
+        "DmlType": "SELECT",
+        "DmlCode": "select * from UserTM"
+      },
+      {
+        "DmlKey": "SelectUserName",
+        "DmlType": "SELECT",
+        "DmlCode": "select name from UserTM where dateId = @UserId"
+      }
+    ]
+  }
+}

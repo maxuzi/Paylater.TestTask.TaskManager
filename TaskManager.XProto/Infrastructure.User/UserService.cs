@@ -17,7 +17,7 @@ namespace Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Serv
             _invoker = pInvoker;
         }
 
-        public async Task<XData> GetName( XData pUserId )
+        public virtual async Task<XData> GetName( XData pUserId )
         {
             var invokerRequest = pUserId.CreateRequest( "IUser.GetUserNameAsync" );
             var resultJson = await _invoker.ExecuteCommandAsync( invokerRequest );
