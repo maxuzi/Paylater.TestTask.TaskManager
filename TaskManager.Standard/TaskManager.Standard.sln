@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylater.TestTask.TaskManager.Core", "Paylater.TestTask.TaskManager.Core\Paylater.TestTask.TaskManager.Core.csproj", "{F5563D7B-71B5-4051-8CC2-98288EABDAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylater.TestTask.TaskManager.Infrastructure", "Paylater.TestTask.TaskManager.Infrastructure\Paylater.TestTask.TaskManager.Infrastructure.csproj", "{4710ECC0-C2AF-467D-91FB-9A5A0EFA3CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylater.TestTask.TaskManager.WebApp", "Paylater.TestTask.TaskManager.WebApp\Paylater.TestTask.TaskManager.WebApp.csproj", "{574D3AA0-6ABF-4E54-8AAE-494CF0C23263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylater.TestTask.TaskManager.Db.EntityFramework", "Paylater.TestTask.TaskManager.Db.EntityFramework\Paylater.TestTask.TaskManager.Db.EntityFramework.csproj", "{1ACF5668-5E24-4747-8CC6-7F1FB0F73DAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5563D7B-71B5-4051-8CC2-98288EABDAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5563D7B-71B5-4051-8CC2-98288EABDAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5563D7B-71B5-4051-8CC2-98288EABDAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5563D7B-71B5-4051-8CC2-98288EABDAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4710ECC0-C2AF-467D-91FB-9A5A0EFA3CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4710ECC0-C2AF-467D-91FB-9A5A0EFA3CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4710ECC0-C2AF-467D-91FB-9A5A0EFA3CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4710ECC0-C2AF-467D-91FB-9A5A0EFA3CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574D3AA0-6ABF-4E54-8AAE-494CF0C23263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574D3AA0-6ABF-4E54-8AAE-494CF0C23263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574D3AA0-6ABF-4E54-8AAE-494CF0C23263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574D3AA0-6ABF-4E54-8AAE-494CF0C23263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACF5668-5E24-4747-8CC6-7F1FB0F73DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACF5668-5E24-4747-8CC6-7F1FB0F73DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACF5668-5E24-4747-8CC6-7F1FB0F73DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACF5668-5E24-4747-8CC6-7F1FB0F73DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CDD6D00-CE33-458B-8F84-8AA620BBA4BA}
+	EndGlobalSection
+EndGlobal

@@ -3,6 +3,9 @@ using Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Reposito
 using Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.Infrastructure.Service.User;
 using Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Api;
 using Paylater.TestTask.TaskManager.UserTasks.Cqrs.Query.UserTasks.Core;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using X.Proto.Common.Entities;
 
 namespace UserTasks.Cqrs.Query.UserTasks.UnitTests
